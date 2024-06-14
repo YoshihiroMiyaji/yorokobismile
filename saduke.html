@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>にをいがけ報告フォーム</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>にをいがけ報告フォーム</h1>
+    <form id="reportForm" action="submit_form.php" method="post">
+        <label for="churchName">教会名:</label>
+        <input type="text" id="churchName" name="churchName" required><br>
+
+        <label for="reporter">報告者:</label>
+        <input type="text" id="reporter" name="reporter" required><br>
+
+        <label for="personName">相手のお名前:</label>
+        <input type="text" id="personName" name="personName" required><br>
+
+        <label for="gender">性別:</label>
+        <select id="gender" name="gender" required>
+            <option value="男性">男性</option>
+            <option value="女性">女性</option>
+            <option value="その他">その他</option>
+        </select><br>
+
+        <label for="ageGroup">年代:</label>
+        <select id="ageGroup" name="ageGroup" required>
+            <option value="10代">10代</option>
+            <option value="20代">20代</option>
+            <option value="30代">30代</option>
+            <option value="40代">40代</option>
+            <option value="50代">50代</option>
+            <option value="60代以上">60代以上</option>
+        </select><br>
+
+        <label for="status">身上事情:</label>
+        <select id="status" name="status" required>
+            <option value="身上">身上</option>
+            <option value="事情">事情</option>
+            <option value="その他">その他</option>
+        </select><br>
+
+        <label for="address">ご住所:</label>
+        <input type="text" id="address" name="address" required><br>
+
+        <label for="remarks">備考欄:</label>
+        <textarea id="remarks" name="remarks"></textarea><br>
+
+        <input type="submit" value="送信">
+    </form>
+</body>
+</html>
